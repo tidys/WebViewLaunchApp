@@ -4,3 +4,8 @@ web2app-client/settings
 cocos2d-js.js
 cocos2d-js.js.map
 index.html
+cocos2d-js-min.js
+main.js
+web2app-client/doc/splash.png
+web2app-client/doc/style-desktop.css
+web2app-client/doc/style-mobile.css

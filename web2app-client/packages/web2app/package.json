@@ -1,0 +1,25 @@
+{
+  "name": "web2app",
+  "version": "0.0.1",
+  "description": "The package template for getting started.",
+  "author": "Cocos Creator",
+  "main": "main.js",
+  "main-menu": {
+    "i18n:MAIN_MENU.package.title/web2app/open": {
+      "message": "web2app:open"
+    },
+    "i18n:MAIN_MENU.package.title/web2app/hello": {
+      "message": "web2app:say-hello"
+    }
+  },
+  "panel": {
+    "main": "panel/index.js",
+    "type": "dockable",
+    "title": "web2app",
+    "width": 400,
+    "height": 300
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.1"
+  }
+}
