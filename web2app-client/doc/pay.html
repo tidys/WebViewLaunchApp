@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn">hello</button>
+<script>
+    // scheme://[path][?query]
+    // scheme:
+    //      微信 weixin://
+    //      支付宝 alipy://
+    //      淘宝 taobao://
+    // window.open('weixin://view?1')
+    let btn = document.getElementById("btn");
+    btn.addEventListener('click', function () {
+        var ifr = document.createElement('iframe');
+        ifr.src = 'weixin://view?1';
+        ifr.style.display = 'none';
+        document.body.appendChild(ifr);
+        setTimeout(function () {
+            document.body.removeChild(ifr);
+        }, 3000);
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<div class="layout vertical">
+    <ui-button @confirm="onOpenServer" v-show="false">开启express</ui-button>
+    <ui-button @confirm="hookPreviewServer" v-show="false">Hook Preview Server</ui-button>
+    <ui-button @confirm="run" v-show="true">Run</ui-button>
+    <ui-checkbox v-value="build2run">编译后打开运行</ui-checkbox>
+</div>
